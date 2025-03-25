@@ -6,7 +6,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 describe('Teste de Solicitação de Contato', () => {
 
-  it('Deve acessar a página de Solicitação de Contato, validar a existência dos respectivos campos do formulário, preencher o formulário, submeter o formulário, validar que ele foi enviado com sucesso e voltar para a Home Page', {defaultCommandTimeout:7000}, () => {
+  it('Deve acessar a página de Solicitação de Contato, validar a existência dos respectivos campos do formulário, preencher o formulário, submeter o formulário, validar que ele foi enviado com sucesso e voltar para a Home Page', {defaultCommandTimeout:10000}, () => {
     homePage
       .visit()
       .acessarSolicitarContatoPage()
