@@ -1,4 +1,4 @@
-import SolicitarContatoPage from './SolicitarContatoPage'
+import solicitarContatoPage from './solicitarContatoPage'
 
 class HomePage {
     visit() {
@@ -10,7 +10,7 @@ class HomePage {
       cy.get('.banner-info-button').eq(1)
         .should('be.visible')
         .contains(' Solicitar contato ').click()
-      return SolicitarContatoPage
+      return solicitarContatoPage
     }
 
     homePageEstaVisivel() {

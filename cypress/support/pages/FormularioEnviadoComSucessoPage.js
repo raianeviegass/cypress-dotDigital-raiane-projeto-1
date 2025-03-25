@@ -1,4 +1,4 @@
-import HomePage from './HomePage'
+import homePage from './homePage'
 
 class FormularioEnviadoComSucesso {
 
@@ -17,7 +17,7 @@ class FormularioEnviadoComSucesso {
     voltarHomePage() {
       cy.get('#undefined').should('be.visible').and('contain.text', 'Continuar navegando')
       cy.get('#undefined').click()
-      return HomePage
+      return homePage
     }
 
 }

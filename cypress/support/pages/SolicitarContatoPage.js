@@ -1,4 +1,4 @@
-import FormularioEnviadoComSucessoPage from './FormularioEnviadoComSucessoPage'
+import formularioEnviadoComSucessoPage from './formularioEnviadoComSucessoPage'
 
 class SolicitarContatoPage {
 
@@ -44,7 +44,7 @@ class SolicitarContatoPage {
     
     submeterFormulario() {
       cy.get('#undefined').click()
-      return FormularioEnviadoComSucessoPage
+      return formularioEnviadoComSucessoPage
     }
 
 }
