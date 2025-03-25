@@ -8,7 +8,7 @@ describe('Teste de Solicitação de Contato', () => {
     .acessarSolicitarContatoPage()
     .solicitarContatoPageEstaVisivel()
     .validarCamposDoFormulario()
-    .preencherFormulario('Iago José Alves', 'iagojosealves@mesquita.not.br', '35494328287', '32242470', '31998697089')
+    .preencherFormulario('Catarina Silvana Rodrigues', 'catarina-rodrigues91@powerblade.com.br', '65761040816', '78736004', '66985385328')
     .validarSelecaoCheckboxes()
     .submeterFormulario()
     .formularioEnviadoComSucessoPageEstaVisivel()
