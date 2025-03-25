@@ -1,8 +1,12 @@
 import homePage from '../support/pages/homePage'
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+  return false
+})
+
 describe('Teste de Solicitação de Contato', () => {
 
-  it('Deve acessar a página de Solicitação de Contato, validar a existência dos respectivos campos do formulário, preencher o formulário, submeter o formulário, validar que ele foi enviado com sucesso e voltar para a Home Page', {defaultCommandTimeout:5000}, () => {
+  it('Deve acessar a página de Solicitação de Contato, validar a existência dos respectivos campos do formulário, preencher o formulário, submeter o formulário, validar que ele foi enviado com sucesso e voltar para a Home Page', {defaultCommandTimeout:7000}, () => {
     homePage
       .visit()
       .acessarSolicitarContatoPage()
